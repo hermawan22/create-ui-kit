@@ -5,16 +5,19 @@ const routes = [
   {
     path: "/",
     exact: true,
+    name: "Home",
     options: () => <div>home!</div>,
     main: () => <h2>Home</h2>
   },
   {
-    path: "/about",
+    path: "/button",
+    name: "Button",
     options: () => <OptionButton />,
     main: () => <ResultButton />
   },
   {
-    path: "/wew",
+    path: "/alert",
+    name: "Alert",
     options: () =>  <div>wew</div>,
     main: () => <div>hahaha</div>
   }

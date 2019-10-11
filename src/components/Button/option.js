@@ -1,31 +1,28 @@
-
-import React from 'react'
-import { Field, reduxForm } from 'redux-form'
+import React from "react";
+import { Field, reduxForm } from "redux-form";
 
 let ButtonOption = props => {
-  const { handleSubmit } = props
   return (
-    <form onSubmit={handleSubmit}>
+    <>
       <div>
-        <label htmlFor="firstName">First Name</label>
-        <Field name="firstName" component="input" type="text" />
+        <label htmlFor="firstName">Props</label>
+        <Field name="props" component="input" type="checkbox" />
       </div>
       <div>
-        <label htmlFor="lastName">Last Name</label>
-        <Field name="lastName" component="input" type="text" />
+        <label htmlFor="lastName">Size</label>
+        <Field name="size" component="input" type="checkbox" />
       </div>
       <div>
-        <label htmlFor="email">Email</label>
-        <Field name="email" component="input" type="email" />
+        <label htmlFor="email">Color</label>
+        <Field name="color" component="input" type="checkbox" />
       </div>
-      <button type="submit">Submit</button>
-    </form>
-  )
-}
+    </>
+  );
+};
 
 ButtonOption = reduxForm({
   // a unique name for the form
-  form: 'contact'
-})(ButtonOption)
+  form: "button"
+})(ButtonOption);
 
 export default ButtonOption;
