@@ -8,9 +8,10 @@ import "./app.scss";
 
 const App = () => {
   const renderRouteName = () => {
-    return routes.map(route => {
+    return routes.map((route, index) => {
       return (
         <Route
+          key={index}
           path={route.path}
           exact={route.exact}
           component={() => route.name}
@@ -18,18 +19,16 @@ const App = () => {
       );
     });
   };
-  
+
   return (
     <Router>
-      <div class="container">
-        <div class="flex-grid">
-          <aside class="col sidebar">
+      <div className="container">
+        <div className="flex-grid">
+          <aside className="col sidebar">
             <h2>Components</h2>
-            <p>
-              <Options />
-            </p>
+            <Options />
           </aside>
-          <section class="col main">
+          <section className="col main">
             <h2>{renderRouteName()}</h2>
             <Results />
           </section>

@@ -8,7 +8,7 @@ const Options = () => {
     <div>
       {routes.map((route, index) => (
         <div key={index}>
-          <Link to={route.path}>{route.path}</Link>
+          <Link to={route.path}>{route.name}</Link>
           <Route
             path={route.path}
             exact={route.exact}
