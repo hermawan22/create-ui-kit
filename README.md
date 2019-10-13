@@ -1,3 +1,3 @@
 ## Create UI Kit
 
-This repor is built on top of CRA
+This project is to make you easily create your own UI Kit or components

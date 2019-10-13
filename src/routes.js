@@ -15,12 +15,6 @@ const routes = [
     options: () => <OptionButton />,
     main: () => <ResultButton />
   },
-  {
-    path: "/alert",
-    name: "Alert",
-    options: () =>  <div>wew</div>,
-    main: () => <div>hahaha</div>
-  }
 ];
 
 export default routes;

@@ -1,4 +1,4 @@
-import OptionButton from './option';
+import OptionButton from './Option';
 import ResultButton from './Results';
 
 export {OptionButton, ResultButton};
