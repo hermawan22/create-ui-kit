@@ -21,7 +21,7 @@ const App = () => {
   };
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="container">
         <div className="flex-grid">
           <aside className="col sidebar">
